@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projet</title>
+    <title>Projet 14: Todolist</title>
     <link rel="stylesheet" href="/assests/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assests/tailwind.config.js"></script>
@@ -14,34 +14,34 @@
             <img src="/images/moon.svg" alt="Image Lune" class="lg:mt-[4rem] mt-[9rem]">
         </div>
         <div class="flex items-center gap-[2rem] border-[0.2rem] bg-white rounded-[0.5rem] mx-auto w-[55rem] h-[7rem] lg:w-[25vw] lg:h-[7vh] lg:ml-[55rem]">
-            <img src="images/round.svg" alt="" class="p-2 ">
-            <input class=" text-gray-400 text-[1.4rem] ml-[2rem border-[0.2rem] border-white rounded-[0.5rem] h-[7vh] w-[25vw] ">
+            <img src="images/round.svg" alt="" class="p-2" id="checkImg">
+            <input oninput="verifChar()" id="inputList" class=" text-gray-400 text-[1.4rem] ml-[2rem border-[0.2rem] border-white rounded-[0.5rem] outline-none h-[5vh] w-[50vw] lg:h-[7vh] lg:w-[25vw] ">
         </div>
     </section>
     <section class=" mb-[10rem] flex flex-col justify-center items-center gap-[2rem] ml-[25rem] lg:w-[35vw] lg:h-[55vh] absolute border-gray-300 border-[0.2rem] rounded-[0.5rem] w-[50vw]">
         <div class="flex flex-col gap-[1rem] w-full h-[50vh] font-normal ">
             <div class="flex flex-1 gap-[2rem] items-center border-b-2">
-            <img src="images/tick.svg" alt="" class="w-[2vw]">
+            <img src="images/round.svg" alt="" class="w-[2vw]">
             <h1 class="text-[1.7rem] font-normal text-gray-300 line-through">Complete online Javascript cours</h1>
             </div>                                                        
             <div class="flex flex-1 gap-[2rem] items-center border-b-2 h-[60rem]">
-                <img src="images/round.svg" alt="" class="w-[2vw]">
+                <img src="images/round.svg" alt="" class="w-[2vw]" id="circle_hover">
                 <h1 class="text-[1.7rem] font-normal">Jog around the park 3x</h1>
             </div>
             <div class="flex flex-1 gap-[2rem] items-center border-b-2">
-                <img src="images/round.svg" alt="" class="w-[2vw]">
+                <img src="images/round.svg" alt="" class="w-[2vw]" id="circle_hover">
                 <h1 class="text-[1.7rem] font-normal">10 minutes medication</h1>
             </div>
             <div class="flex flex-1 gap-[2rem] items-center border-b-2">
-                <img src="images/round.svg" alt="" class="w-[2vw]">
+                <img src="images/round.svg" alt="" class="w-[2vw]" id="circle_hover">
                 <h1 class="text-[1.7rem] font-normal">Ready for 1 hour</h1>
             </div>
             <div class="flex flex-1 gap-[2rem] items-center border-b-2">
-                <img src="images/round.svg" alt="" class="w-[2vw]">
+                <img src="images/round.svg" alt="" class="w-[2vw]" id="circle_hover">
                 <h1 class="text-[1.7rem] font-normal">Pick up groceries</h1>
             </div>
             <div class="flex flex-1 gap-[2rem] items-center border-b-2">
-                <img src="images/round.svg" alt="" class="w-[2vw]">
+                <img src="images/round.svg" alt="" class="w-[2vw]" id="circle_hover">
                 <h1 class="text-[1.7rem] font-normal">Complete Todo App on Fronted Mentor</h1>
             </div>
         </div>
@@ -65,6 +65,6 @@
         </div>
         <div class="text-[1.5rem] text-gray-700">Drag and drop to reorder list</div>
     </section>
-
+    <script src="/assests/script.js"></script>
 </body>
 </html>

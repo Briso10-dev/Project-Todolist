@@ -7,17 +7,18 @@
     --font_josefine: Josefin Sns;
 }
 *{
-    border: 0;
+    border: none;
     padding: 0;
     margin: 0;
 }
 html{
-    overflow-x: hidden;
     font-size: var(--font_default);
     
 }
 body{
-    font-size: var(--font_default);
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
     font-family: var(--font_josefine);
 
 }
